@@ -1,0 +1,572 @@
+body{
+    background: #e5e5e5;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    width:100%;
+    height: fit-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: rgba(245, 245, 245, 0.719); */
+    /* background-image: linear-gradient(to bottom, grey 20%, whitesmoke); */
+    color:black;
+    display: flex;
+    /* background-color: #222; */
+}
+
+/* .fade{
+    animation-name: fade-in;
+    animation-duration: 1s;
+    position: relative;
+    animation-iteration-count: 1;
+    color: black;
+} */
+
+@keyframes  fade-in{
+    from{
+        left:0px;
+        opacity: 0;
+    }
+
+    to{
+        left: 0px;
+        
+    }
+}
+
+.left{
+    width: 80px;
+    height: 100vh;
+    /* border-right: 1px solid #ccc; */
+    position:fixed;
+    left:92%;
+    top:0px;
+    /* background-color: whitesmoke; */
+}
+
+.left ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links{
+    height: 50%;
+    width: 90%;
+    top: 130px;
+    position: relative;
+    /* border: 1px solid black; */
+    border-radius: 40%;
+}
+
+.tool-box{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.747); */
+    /* box-shadow:0px 0px 2px lightgrey; */
+    margin: auto;
+    position: relative;
+    text-align: center;
+    padding: 13px;
+    text-transform: capitalize;
+    font-size: 19pt;
+    color:#222;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
+.tool-tip{
+    width:100px;
+    padding: 4px;
+    background-color: #222;
+    position: absolute;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    box-shadow:0px 0px 10px lightgrey;
+    right: 80px;
+    top:15px;
+    opacity: 0;
+    font-size: 12pt;
+}
+
+
+.tool-tip::before{
+    content:" ";
+    border: 6px solid transparent;
+    border-left: 5px solid black;
+    position: absolute;
+    right: -10px;
+    top:7px;
+}
+
+.tool-box:hover .tool-tip{
+    opacity: 1;
+    transition-duration: 0.5s;
+}   
+
+.tool-box:hover{
+    /* color: whitesmoke; */
+    /* background-color: #222; */
+    cursor:pointer;
+}
+
+.links a{
+    text-decoration: none;
+}
+
+.aa{
+    font-size: 15pt;
+    font-weight: bolder;
+    color: white;
+    background-color: #222;
+    width: 30px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+/* working on the profile class*/
+.profile{
+    width: 23%;
+    height: 95%;
+    left: 1%;
+    top:2%;
+    background-color: transparent;
+    /* box-shadow: 0px 0px 5px #ccc; */
+    position: fixed;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.pro-pic{
+    width: 80%;
+    height: 200px;
+    background-color: #222;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    align-items: center;
+}
+
+.name{
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+.job{
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.pro-media{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.facebook,.twitter,.linkedin{
+    font-size: 20pt;
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 55px;
+    height:55px;
+    padding: 13px;
+    text-align: center;
+}
+
+.twitter{
+    border: 1px solid orangered;
+    color: orangered;
+}
+
+.hire{
+    width: 100%;
+    justify-content: space-around;
+    height: 90px;
+    align-items: center;
+    margin-top: 30px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+.hire-btn{
+    width: 230px;
+    padding: 13px;
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(to right bottom, purple 20%, orangered);
+    color: white;
+}
+
+.heading{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.center{
+    width:50%;
+    height: 100vh;
+    margin: auto;
+}
+
+.small{
+    width:100px;
+    border: 1px solid #333;
+    text-align: center;
+    padding: 5px ;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+}
+
+.center-heading{
+    width: 100%;
+    position: relative;
+    top:70px;
+    left:100px;
+    font-family: arial;
+}
+
+.c-heading{
+    font-size: 35pt;
+}
+
+.s-heading{
+    font-family: candara;
+    margin-top: 20px;
+}
+
+.color{
+    color: orangered;
+    font-weight: bolder;
+}
+
+.anime{
+    width: 100px;
+    height: 100px;
+    /* background-color: orangered; */
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-size: 25pt;
+    border-radius: 100%;
+    animation: anime 2s linear infinite;
+    /* animation-iteration-count: infinite; */
+    border: 1px solid black;
+}
+
+@keyframes anime{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.boxes{
+    width: 100%;
+    /* background-color: red; */
+    height:30vh;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: orangered; */
+}
+
+.box-1,.box-2,.box-3{
+    width: 31.3%;
+    box-shadow: 0px 0px 3px grey;
+    height: 30vh;
+    border-radius: 15px;
+    display: block;
+}
+
+.box-img{
+    height: 70%;
+    width: 100%;
+    background-color: #222;
+    /* background-image: linear-gradient(to bottom right, #222 70%, orangered); */
+    color: #222;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+.alpha{
+    width: 50px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box-text{
+    text-align: center;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.box-1 a, .box-2 a, .box-3 a{
+    color: black;
+    text-decoration: none;
+}
+
+.pro-img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES WORK STARTS HERE*/
+
+
+
+@media (max-width:900px){
+    body{
+        background: #e5e5e5;
+        margin: 0;
+        padding: 0;
+    }
+    
+    *{
+        box-sizing: border-box;
+    }
+    
+    #container{
+        width:100%;
+        height: fit-content;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* background-color: rgba(245, 245, 245, 0.719); */
+        /* background-image: linear-gradient(to bottom, grey 20%, whitesmoke); */
+        color:black;
+        display: block;
+    }
+    
+    /* .fade{
+        animation-name: fade-in;
+        animation-duration: 1s;
+        position: relative;
+        animation-iteration-count: 1;
+        color: black;
+    } */
+    
+    @keyframes  fade-in{
+        from{
+            left:0px;
+            opacity: 0;
+        }
+    
+        to{
+            left: 0px;
+            
+        }
+    }
+    
+    .left{
+        display: none;
+    }
+    
+    
+    /* working on the profile class*/
+    .profile{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        /* box-shadow: 0px 0px 5px #ccc; */
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+    
+    .pro-pic{
+        width: 80%;
+        height: 200px;
+        background-color: #222;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        height: 90px;
+        align-items: center;
+    }
+    
+    .name{
+        font-size: 16pt;
+        font-weight: bolder;
+    }
+    
+    .job{
+        font-size: 13px;
+        text-transform: capitalize;
+    }
+    
+    .pro-media{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        height: 90px;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .facebook,.twitter,.linkedin{
+        font-size: 20pt;
+        border-radius: 100%;
+        border: 1px solid black;
+        width: 55px;
+        height:55px;
+        padding: 13px;
+        text-align: center;
+    }
+    
+    .twitter{
+        border: 1px solid orangered;
+        color: orangered;
+    }
+    
+    .hire{
+        width: 100%;
+        justify-content: space-around;
+        height: 90px;
+        align-items: center;
+        margin-top: 30px;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+    }
+    
+    .hire-btn{
+        width: 230px;
+        padding: 20px;
+        border-radius: 30px;
+        border: none;
+        background-color: orangered;
+        font-size: 13pt;
+    }
+    
+    .heading{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .go{
+        display: none;
+    }
+    
+    .boxes{
+        width: 100%;
+        /* background-color: red; */
+        height:fit-content;
+        margin-top: 50px;
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        /* background-color: orangered; */
+    }
+    
+    .box-1,.box-2,.box-3{
+        width: 60%;
+        box-shadow: 0px 0px 3px grey;
+        height: 35vh;
+        border-radius: 15px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+    }
+    
+    .box-img{
+        height: 70%;
+        width: 100%;
+        background-color: #222;
+    }
+    
+    .box-text{
+        text-align: center;
+        padding: 15px;
+        font-weight: bolder;
+    }
+    
+    .box-1 a, .box-2 a, .box-3 a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .small{
+        display: none;
+    }
+
+    .center-heading{
+        left:0px;
+        top:50px;
+    }
+
+    .anime{
+        margin: auto;
+    }
+    
+    .center{
+        width:100%;
+    }
+   
+}
